@@ -2,11 +2,22 @@
 
 This repository contains the starter template for the Quantum Circuit Simulator assignment in CS 238: Quantum Programming.
 
-Your task is to implement a simulator that parses and executes OpenQASM 2.0 circuits using a restricted gate set. At the end of simulation, your code should return the final quantum state vector as a NumPy complex array.
+Your task is to implement a simulator that parses and executes OpenQASM 2.0 circuits using a restricted gate set. At the end of simulation, your code should return the final quantum state vector as a NumPy complex array.You may use any Python standard library (e.g., re) for parsing the QASM string.Third-party packages such as qiskit, pyparsing, or lark are not allowed as is seen as cheating. To parse any qasm program, consider the following built-in python functionality:
+
+```
+str.split()
+str.strip()
+str.replace()
+str.startswith()
+str.endswith()
+```
+
+You may want to find some useful method in the following documents:
+
+https://docs.python.org/3/library/stdtypes.html#string-methods
 
 
 Your simulator should be able to compile any qasm file with the following gate sets: x,h,t,cx,tdg.
-
 
 
 # Simulation API
